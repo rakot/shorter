@@ -1,0 +1,1 @@
+<div style="height: 400px; padding-top: 100px;">Empty page, make redirect to your default Admin Controller</div>

@@ -1,0 +1,20 @@
+Solution written on PHP/MySQL, framework Yii 1.* (req PDO:MySQL)
+
+Shorten algorithm - take md5 from original url, it will be 32 symbol hex, split it into 8 parts by 4 digits
+convert hex 4digits to int digit and modulus result to len of alphabet, result digit will be index on alphabet array
+
+If result 8 symbol string will be taken, it will add random number to the end of original url.
+
+Configure your database setting protected/config/database.php , should be MySQL
+cd protected
+Change #!/Applications/MAMP/bin/php/php5.6.10/bin/php in yiic file to your php path
+./yiic migrate
+
+Navigate to http://yourhostproject.local/
+
+And create some urls
+
+To clean urls created more then 15 days, launch and add to cron:
+./yiic cleanurls
+
+I didn't have enough time for create API, i skip this task.

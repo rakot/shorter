@@ -1,0 +1,4 @@
+#!/Applications/MAMP/bin/php/php5.6.10/bin/php
+<?php
+
+require_once(dirname(__FILE__).'/yiic.php');
